@@ -4,4 +4,6 @@ func main() {
 	// deckSandbox()
 
 	structSandbox()
+
+	mapSandbox()
 }
