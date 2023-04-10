@@ -3,7 +3,9 @@ package main
 func main() {
 	// deckSandbox()
 
-	structSandbox()
+	//structSandbox()
 
-	mapSandbox()
+	//mapSandbox()
+
+	interfaceSandbox()
 }
