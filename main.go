@@ -7,5 +7,7 @@ func main() {
 
 	//mapSandbox()
 
-	interfaceSandbox()
+	//interfaceSandbox()
+
+	httpSandbox()
 }
