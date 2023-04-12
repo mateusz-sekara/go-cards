@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"time"
 )
 
 func routineSandbox() {
@@ -21,7 +22,10 @@ func routineSandbox() {
 	}
 
 	for l := range c {
-		go checkLink(l, c)
+		go func(internalLink string) {
+			time.Sleep(3 * time.Second)
+			checkLink(internalLink, c)
+		}(l)
 	}
 }
 
